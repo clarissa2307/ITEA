@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/form.css">
 	<title>Registrate</title>
 </head>
 <body>
@@ -14,15 +14,24 @@
 		<hr class="border">
 		
         <form action="<?php echo htmlspecialchars ($_SERVER['PHP_SELF']); ?>" method="POST" class="formulario" name="login">
+        <div class="form-group">
+                <i class="icono izquierda fa fa-user"></i><input type="text" name="nombre" class="usuario" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+                <i class="icono izquierda fa fa-user"></i><input type="text" name="apellido-p" class="usuario" placeholder="Apellido Paterno">
+            </div>
+            <div class="form-group">
+                <i class="icono izquierda fa fa-user"></i><input type="text" name="apellido-m" class="usuario" placeholder="Apellido Materno">
+            </div>
             <div class="form-group">
                 <i class="icono izquierda fa fa-user"></i><input type="text" name="usuario" class="usuario" placeholder="Usuario">
             </div>
             <div class="form-group">
-                <i class="icono izquierda fa fa-lock"></i><input type="password" name="password" class="password" placeholder="Contraseña">
+                <i class="icono izquierda fa fa-unlock-alt"></i><input type="password" name="password" class="password" placeholder="Contraseña">
             </div>
             <div class="form-group">
-                <i class="icono izquierda fa fa-user"></i><input type="password" name="password2" class="password_btn" placeholder="Repetir contraseña">
-                <i class="submit-btn fa fa-user" onclick="login.submit()"></i>
+                <i class="icono izquierda fa fa-unlock-alt"></i><input type="password" name="password2" class="password_btn" placeholder="Repetir contraseña">
+                <i class="submit-btn fa fa-unlock-alt" onclick="login.submit()"></i>
             </div>
 
             <?php if(!empty($errores)): ?> 
