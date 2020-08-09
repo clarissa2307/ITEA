@@ -3,7 +3,11 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
+<<<<<<< HEAD
+-- Tiempo de generación: 10-08-2020 a las 00:56:07
+=======
 -- Tiempo de generación: 10-08-2020 a las 00:30:51
+>>>>>>> 940265599d5bea8f0ff63472a6b4e78116e350cb
 -- Versión del servidor: 10.4.11-MariaDB
 -- Versión de PHP: 7.4.6
 
@@ -55,6 +59,10 @@ CREATE TABLE `educando` (
   `genero` varchar(55) NOT NULL,
   `feche nacimiento` date NOT NULL,
   `correo` varchar(55) NOT NULL,
+<<<<<<< HEAD
+  `nivel de estudio` varchar(55) NOT NULL,
+=======
+>>>>>>> 940265599d5bea8f0ff63472a6b4e78116e350cb
   `id_usuario` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -140,3 +148,4 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
