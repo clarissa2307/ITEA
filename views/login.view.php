@@ -35,7 +35,7 @@
 						Ingresa tu Usuario
 					</span>
 
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<div class="wrap-input100 validate-input" data-validate = "correo incorrecto">
 						<input class="input100" type="text" name="email" placeholder="Correo">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
@@ -43,7 +43,7 @@
 						</span>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+					<div class="wrap-input100 validate-input" data-validate = "contraseña incorrecta">
 						<input class="input100" type="password" name="pass" placeholder="Contraseña">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
