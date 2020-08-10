@@ -9,13 +9,13 @@
 body {
 	font-size: 16px;
 	font-family: 'Raleway', sans-serif;
-	background: #1B1D35;
+	background: #e6dcdc;
 	color:#fff;
 }
 
 a {
 	text-decoration: none;
-	color:#B8711B;
+	color:#ca4118;
 }
 
 a:hover {
@@ -44,7 +44,7 @@ a:hover {
 }
 
 .formulario {
-	background: #2C2C47;
+	background: #ffffff;
 	padding: 30px;
 	margin-bottom: 30px;
 }

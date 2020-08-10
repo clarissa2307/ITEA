@@ -8,7 +8,7 @@
     
 </head>
 <body>
-  <form action="recibe.php" method="">
+  <form action="<?php echo htmlspecialchars ($_SERVER['PHP_SELF']); ?>" method="POST">
     <br>
    <div class="container">
       <div class="">
@@ -50,7 +50,15 @@
           <label for="fecha">Fecha Nacimiento</label>
           <input type="date" placeholder="Edad" class="form-control " id="fecha" value="" required>
         </div>
+        <div class="col-md-4 mb-3">
+          <label for="email">Correo electronico</label>
+          <input type="email" placeholder="Correo electronico" class="form-control is-valid" id="email" value="" required>
+        </div>
       </div>  
+      <div class="form-group">
+        <label for="foto">Foto del educando</label>
+        <input type="file" class="form-control-file" id="foto" value="">
+      </div>
       <div class="">
         <h2>Lugar de Residencia</h2>
       </div>
@@ -87,10 +95,7 @@
           <label for="tel">Telefono Celular</label>
           <input type="tel" placeholder="Telefono Celular" class="form-control is-valid" id="tel" value="" required>
         </div>
-        <div class="col-md-4 mb-3">
-          <label for="email">Correo electronico</label>
-          <input type="email" placeholder="Correo electronico" class="form-control is-valid" id="email" value="" required>
-        </div>
+        
         </div>
         <div class="">
           <h2>Nivel Educativo que solicita</h2>
@@ -105,6 +110,7 @@
           </select>
         </div>
       </div>
+      
       <div class="form-group">
         <button type="submit" class="btn btn-primary">Enviar</button>
       </div>

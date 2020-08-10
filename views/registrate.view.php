@@ -18,10 +18,10 @@
                 <i class="icono izquierda fa fa-user"></i><input type="text" name="nombre" class="usuario" placeholder="Nombre">
             </div>
             <div class="form-group">
-                <i class="icono izquierda fa fa-user"></i><input type="text" name="apellido-p" class="usuario" placeholder="Apellido Paterno">
+                <i class="icono izquierda fa fa-user"></i><input type="text" name="apellidop" class="usuario" placeholder="Apellido Paterno">
             </div>
             <div class="form-group">
-                <i class="icono izquierda fa fa-user"></i><input type="text" name="apellido-m" class="usuario" placeholder="Apellido Materno">
+                <i class="icono izquierda fa fa-user"></i><input type="text" name="apellidom" class="usuario" placeholder="Apellido Materno">
             </div>
             <div class="form-group">
                 <i class="icono izquierda fa fa-user"></i><input type="text" name="usuario" class="usuario" placeholder="Usuario">
