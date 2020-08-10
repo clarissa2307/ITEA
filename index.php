@@ -1,85 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITEA</title>
+	<meta charset="UTF-8">
+	<title>ITEA</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <header>
-        <div class="contenedor">
-            <nav class="menu">
-                <img src="img/ITEA.jpg" alt="" class="card-img-top">   
-                <img src="img/tlx.jpg" alt="" class="card-img-top">
-                <a href="#" id="btn-acerca-de">Acerca de</a>
-                <a href="#" id="btn-servicios">Servicios</a>
-                <a href="#" id="btn-ubicacion">Ubicacion</a>
-            </nav>
-            <div class="textos">
-                <h1 class="nombre">ITEA</h1>
-                <h3>Instituto Tlaxcalteca para la Educacion de los Adultos</h3>
-            </div>
-        </div>
-    </header>
+	<header>
+		<div class="contenedor">
+			<nav class="menu">
+				<a href="#acerca-de">Acerca de</a>
+                <a href="#trabajos">Servicios </a>
+                <a href="index.php">Iniciar sesión</a>
+				<a href="#contacto">Contactanos</a>
+			</nav>
+			
+			<div class="contenedor-texto">
+				<div class="texto">
+					<h1 class="nombre">ITEA</h1>
+					<h2 class="profesion">Instituto Tlaxcalteca para la Educacion de los Adultos</h2>
+				</div>
+			</div>
+		</div>
+	</header>
 
-    <section class="main">
-        <section class="acerca-de" id="acerca-de">
-            <div class="contenedor">
-                <div class="foto">
-                    <img src="img/acerca-de.jpg" alt="">
-                </div>
-                <article>
-                    <h3>Acerca de</h3>
-                    <p>Somos una Institución encargada de ofrecer, Servicios Educativos de calidad a los jóvenes y adultos que presentan rezago educativo, en materia de educación básica, proporcionándoles herramientas para su crecimiento y desarrollo personal.</p> 
-                </article>
-            </div>
-        </section>
+	<section class="main">
+		<section class="acerca-de" id="acerca-de">
+			<div class="contenedor">
+				<div class="foto">
+					<img src="img/ITEA.jpg" width="300" height="250" alt="">
+                    <img src="img/tlx.jpg" width="300" height="250" alt="">
+				</div>
+			
+				<div class="texto">
+					<h3 class="titulo">Acerca de</h3>
+					<p>Somos una Institución encargada de ofrecer, Servicios Educativos de calidad a los jóvenes y adultos que presentan rezago educativo, en materia de educación básica, proporcionándoles herramientas para su crecimiento y desarrollo personal.</p>
+				</div>
+			</div>
+		</section>
+			
+		<section class="trabajos" id="trabajos">
+			<div class="contenedor">
+				<h3 class="titulo">Servicios</h3>
+						
+				<div class="contenedor-trabajos">
+					<div class="trabajo">
+						<div class="thumb">
+							<img src="img/alfa.jpg" alt="Alfabetizacion">
+						</div>
+						<div class="descripcion">
+							<p class="nombre">Alfabetización</p>
+							<p class="categoria">CURP </br> 15 años cumplidos. </br> Fotografia digital tamaño infantil. </br> Llenar el formato.</p>
+							<form class="subscribe">
+                            <div class="input-append">
+                                <a href="views/registrate.view.php" target="_black">
+                                <button class="btn btn-theme" type="button">Registrarse</button>
+                                </a>
+                            </div>
+                            </form>
+						</div>
+					</div>
+					<div class="trabajo">
+						<div class="thumb">
+							<img src="img/primaria.jpg" alt="Lorem Ipsum">
+						</div>
+						<div class="descripcion">
+							<p class="nombre">Primaria</p>
+							<p class="categoria">CURP </br> 15 años cumplidos. </br> Fotografia digital tamaño infantil. </br> Boletas de ultimo grado de estudios </br> Llenar el formato.</p>
+							<form class="subscribe">
+                            <div class="input-append">
+                                <a href="registrate.view.php" target="_black">
+                                <button class="btn btn-theme" type="button">Registrarse</button>
+                                </a>
+                            </div>
+                            </form>
+						</div>
+					</div>
+					<div class="trabajo">
+						<div class="thumb">
+							<img src="img/secundaria.jpg" alt="Lorem Ipsum">
+						</div>
+						<div class="descripcion">
+							<p class="nombre">Secundaria</p>
+							<p class="categoria">CURP </br> 15 años cumplidos. </br> Acta de nacimiento. </br> Boletas de primero y/o segundo grado. </br> Fotografia digital tamaño infantil. </br> Boletas de primero y/o segundo grado de secundaria </br> Llenar el formato.</p>
+				            <form class="subscribe">
+                            <div class="input-append">
+                                <a href="registrate.view.php" target="_black">
+                                <button class="btn btn-theme" type="button">Registrarse</button>
+                                </a>
+                            </div>
+                            </form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
 
-    <main class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="py-4 border-bottom">
-                    <h1 class="text-center">Servicios</h1>
-                </div>
-            </div>
+	<footer>
+		<div class="contenedor" id="contacto">
+			<section class="contacto">
+				<h3 class="titulo">Contactanos</h3>
+				<form class="formulario" action="">
+					<input type="text" placeholder="Nombre" name="nombre" required>
+					<input type="email" placeholder="Correo" name="correo" required>
+					<textarea name="mensaje" placeholder="Mensaje:"></textarea>
+					<input class="boton" type="submit" value="Enviar">
+				</form>
+			</section>
         </div>
-        <div class="row py-4">
-            <div class="col-12 col-sm-6 col-lg-3 mb-4">
-                <div class="card">
-                    <img src="img/alfa.jpg" alt="" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">Alfabetización</h3>
-                        <p class="card-text">CURP </br> 15 años cumplidos. </br> Fotografia digital tamaño infantil. </br> Llenar el formato.</p>
-                        <a href="#" class="btn btn-sm btn-secondary">Registrarse</a>
-                    </div>
-                </div>
+        <section class="galeria" id="galeria">
+            <div class="foto">
+                <img src="img/1.jpg" alt="300" width="300">
             </div>
-            <div class="col-12 col-sm-6 col-lg-3 mb-4">
-                <div class="card">
-                    <img src="img/primaria.jpg" alt="" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">Primaria</h3>
-                        <p class="card-text">CURP </br> 15 años cumplidos. </br> Fotografia digital tamaño infantil. </br> Boletas de ultimo grado de estudios </br> Llenar el formato.</p>
-                        <a href="#" class="btn btn-sm btn-secondary">Registrarse</a>
-                    </div>
-                </div>
+            <div class="foto">
+                <img src="img/3.jpg" alt="300">
             </div>
-            <div class="col-12 col-sm-6 col-lg-3 mb-4">
-                <div class="card">
-                    <img src="img/secundaria.jpg" alt="" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">Secundaria</h3>
-                        <p class="card-text">CURP </br> 15 años cumplidos. </br> Acta de nacimiento. </br> Boletas de primero y/o segundo grado. </br> Fotografia digital tamaño infantil. </br> Boletas de primero y/o segundo grado de secundaria </br> Llenar el formato.</p>
-                        <a href="#" class="btn btn-sm btn-secondary">Registrarse</a>
-                    </div>
-                </div>
+            <div class="foto">
+                <img src="img/4.jpg" alt="300" width="300">
             </div>
-    </section>
-    
-    <footer>
+        </section>    
         <section class="ubicacion" id="ubicacion">
             <div class="contenedor">
-                <h3 class="titulo">Ubicacion</h3>
+                <h3 class="titulo">Ubicación</h3>
                     <div class="direccion">
                         <p class="calle">Calle Iturbide s/n <br> Cuapiaxtla, Tlaxcala 90560</p>
                     </div>
@@ -90,35 +135,20 @@
                     </div>
             </div>
             <section class="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.6997819771195!2d-97.77067178514524!3d19.295417586962454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c55612035bb3eb%3A0x93d48eef8f70ee28!2sCalle%20Agust%C3%ADn%20de%20Iturbide%2C%20San%20Miguel%2C%2090560%20Cuapiaxtla%2C%20Tlax.!5e0!3m2!1ses-419!2smx!4v1596582264934!5m2!1ses-419!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.6997819771195!2d-97.77067178514524!3d19.295417586962454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c55612035bb3eb%3A0x93d48eef8f70ee28!2sCalle%20Agust%C3%ADn%20de%20Iturbide%2C%20San%20Miguel%2C%2090560%20Cuapiaxtla%2C%20Tlax.!5e0!3m2!1ses-419!2smx!4v1596582264934!5m2!1ses-419!2smx" width="1600" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </section>
         </section>
-        </section>
-          <div class="col-lg-4 col-md-4 col-sm-6 ">
-            <div class="widget">
-              <h5 class="widgetheading">Pre-registro</h5>
-              <p>
-                Registrate en los Servicios que Ofrece el ITEA, como Educando y Figura Operativa.
-              </p>
-              <form class="subscribe">
-                <div class="input-append">
-                  <a href="apps/pre-registro" target="_black">
-                    <button class="btn btn-theme" type="button">Registrar</button>
-                  </a>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="sub-footer">
-        <div class="containeer">
-          <div class="roow">
-            <div class="col-lg-6 col-sm-12">
-              <div class="copyright">
-                <p><span>&copy; ITEA Tlaxcala. Dirección de Informática</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
+        <section class="redes-sociales">
+			<div class="contenedor">
+				<p>Pre-registro </br> Registrate en los Servicios que te ofrece el ITEA.</p>
+                	<form class="subscribe">
+                 		<div class="input-append">
+                        	<a href="registrate.view.php" target="_black">
+                      		<button class="btn btn-theme" type="button">Registrarse</button>
+                    		</a>
+            		   </div>
+		            </form>
+			</div>
+		</section>
     </footer>
