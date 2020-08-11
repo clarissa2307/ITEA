@@ -13,8 +13,7 @@
 			<nav class="menu">
 				<a href="#acerca-de">Acerca de</a>
                 <a href="#trabajos">Servicios </a>
-                <a href="index.php">Iniciar sesión</a>
-				<a href="#contacto">Contactanos</a>
+                <a href="login.php">Iniciar sesión</a>
 			</nav>
 			
 			<div class="contenedor-texto">
@@ -55,7 +54,7 @@
 							<p class="categoria">CURP </br> 15 años cumplidos. </br> Fotografia digital tamaño infantil. </br> Llenar el formato.</p>
 							<form class="subscribe">
                             <div class="input-append">
-                                <a href="views/registrate.view.php" target="_black">
+                                <a href="registrate.php" target="_black">
                                 <button class="btn btn-theme" type="button">Registrarse</button>
                                 </a>
                             </div>
@@ -100,23 +99,12 @@
 	</section>
 
 	<footer>
-		<div class="contenedor" id="contacto">
-			<section class="contacto">
-				<h3 class="titulo">Contactanos</h3>
-				<form class="formulario" action="">
-					<input type="text" placeholder="Nombre" name="nombre" required>
-					<input type="email" placeholder="Correo" name="correo" required>
-					<textarea name="mensaje" placeholder="Mensaje:"></textarea>
-					<input class="boton" type="submit" value="Enviar">
-				</form>
-			</section>
-        </div>
         <section class="galeria" id="galeria">
             <div class="foto">
                 <img src="img/1.jpg" alt="300" width="300">
             </div>
             <div class="foto">
-                <img src="img/3.jpg" alt="300">
+                <img src="img/3.jpg" alt="300" width="300">
             </div>
             <div class="foto">
                 <img src="img/4.jpg" alt="300" width="300">
