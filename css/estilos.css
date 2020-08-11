@@ -141,7 +141,7 @@ header .contenedor-texto {
     margin-bottom: 30px;
     object-fit: cover;
     animation: escalar 1.5s infinite alternate;
-    filter: brightness(70%);
+    filter: brightness(60%);
 }
 @keyframes escalar {
     to {
@@ -227,10 +227,9 @@ footer .redes-sociales {
         padding: 10px 0;
         display: block;
         margin: 0 0px;}
-        footer .redes-sociales .contenedor .suscribite .input-append .button .btn .btn-theme {
+        footer .redes-sociales .contenedor .input-append {
             text-align: center;
         }
-
 /* ----- ----- MEDIA QUERIES ----- ----- */
 @media screen and (max-width: 800px) {
     header .menu {
