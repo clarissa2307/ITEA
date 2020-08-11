@@ -78,7 +78,8 @@ header .contenedor-texto {
             text-align: center; }
 .main .trabajos {
     background: #f2f2f2;
-    padding: 60px 0; }
+    padding: 60px 0; 
+    margin-bottom: 60px;}
     .main .trabajos .contenedor {
         overflow: hidden;}
         .main .trabajos .titulo {
@@ -114,7 +115,6 @@ header .contenedor-texto {
             color: #636363; }
   
   /* ----- ----- FOOTER ----- ----- */
-
 .contenedor-galeria {
     display: flex;
     width: 100%;
@@ -122,6 +122,7 @@ header .contenedor-texto {
     flex-wrap: wrap;
     max-width: 1000px;
     margin: auto;
+    margin-bottom: -30px;
 }
 .galeria__img {
     width: 300px;
@@ -152,15 +153,15 @@ footer .ubicacion {
         
     footer .ubicacion .titulo {
         text-align: left;
-        font-size: 40px;
-        line-height: 40px;
-        font-weight: 300;
-        margin-bottom: 40px;
+        font-size: 0px;
+        line-height: 0px;
+        font-weight: 0;
+        margin-bottom: 0px;
     }
         
     footer .ubicacion .direccion {
         float: left;
-        width: 50%;
+        width: 20%;
         text-align: left;
     }
         
@@ -177,7 +178,7 @@ footer .ubicacion {
         
     footer .ubicacion .horarios h4 {
         text-align: right;
-        margin-bottom: 40px;
+        margin-bottom: 0px;
     }
         
     footer .ubicacion .horarios .entre-semana{
