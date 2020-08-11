@@ -99,26 +99,23 @@
 	</section>
 
 	<footer>
-        <section class="galeria" id="galeria">
-            <div class="foto">
-                <img src="img/1.jpg" alt="300" width="300">
-            </div>
-            <div class="foto">
-                <img src="img/3.jpg" alt="300" width="300">
-            </div>
-            <div class="foto">
-                <img src="img/4.jpg" alt="300" width="300">
-            </div>
-        </section>    
+		<div class="contenedor-galeria">
+			<img src="img/1.jpg" alt="" class="galeria__img">
+			<img src="img/3.jpg" alt="" class="galeria__img">
+			<img src="img/4.jpg" alt="" class="galeria__img">
+			<img src="img/5.jpg" alt="" class="galeria__img">
+			<img src="img/6.jpg" alt="" class="galeria__img">
+			<img src="img/7.jpg" alt="" class="galeria__img">
+		</div>
         <section class="ubicacion" id="ubicacion">
             <div class="contenedor">
-                <h3 class="titulo">Ubicación</h3>
+                <h3 class="titulo1">Ubicación</h3>
                     <div class="direccion">
                         <p class="calle">Calle Iturbide s/n <br> Cuapiaxtla, Tlaxcala 90560</p>
                     </div>
 
                     <div class="horarios">
-                        <h4>Horarios</h4>
+                        <h4 class="titulo1">Horarios</h4>
                         <p class="entre-semana">Lunes a Viernes <br> 8:00am - 4:00pm</p>
                     </div>
             </div>

@@ -115,27 +115,34 @@ header .contenedor-texto {
   
   /* ----- ----- FOOTER ----- ----- */
 
-footer .galeria {
-    overflow: hidden;
+.contenedor-galeria {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
 }
-        
-    footer .galeria .foto {
-        width: 25%;
-        float: left;
+.galeria__img {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 30px;
+    object-fit: cover;
+    animation: escalar 1.5s infinite alternate;
+    filter: brightness(70%);
+}
+@keyframes escalar {
+    to {
+        transform: scale(1);
     }
-        
-        footer .galeria .foto img {
-            width: 100%;
-            vertical-align: center;
-            opacity: .5;
-        }
-        
-            footer .galeria .foto img:hover {
-                opacity: 1;
-                -webkit-transition: all .3s ease;
-                -o-transition: all .3s ease;
-                transition: all .3s ease;
-            }
+    from {
+        transform: scale(1.05);
+    }
+}
+
+.galeria__img:hover {
+    filter: brightness(100%);
+}
 
 footer .ubicacion {
     background: #fff;
@@ -228,16 +235,12 @@ footer .redes-sociales .contenedor {
 footer .redes-sociales .contenedor a {
     padding: 20px; }  
 
-    .footer .galeria .foto {
-        width: 50%;
-    }
-
-.main .ubicacion .direccion {
+footer .ubicacion .direccion {
     margin-bottom: 15px;
 }
 
-.main .ubicacion .direccion,
-.main .ubicacion .horarios {
+footer .ubicacion .direccion,
+footer .ubicacion .horarios {
     width: 100%;
     text-align: center;}
 }
