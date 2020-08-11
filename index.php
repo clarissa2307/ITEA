@@ -127,7 +127,7 @@
         <section class="redes-sociales">
 			<div class="contenedor">
 				<p>Pre-registro </br> Registrate en los Servicios que te ofrece el ITEA.</p>
-                	<form class="subscribe">
+                	<form class="subscribete">
                  		<div class="input-append">
                         	<a href="registrate.php" target="_black">
                       		<button class="btn btn-theme" type="button">Registrarse</button>
