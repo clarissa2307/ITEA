@@ -132,7 +132,7 @@
 				<p>Pre-registro </br> Registrate en los Servicios que te ofrece el ITEA.</p>
                 	<form class="subscribe">
                  		<div class="input-append">
-                        	<a href="registrate.view.php" target="_black">
+                        	<a href="registrate.php" target="_black">
                       		<button class="btn btn-theme" type="button">Registrarse</button>
                     		</a>
             		   </div>
