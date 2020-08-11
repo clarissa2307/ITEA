@@ -70,7 +70,7 @@
 							<p class="categoria">CURP </br> 15 años cumplidos. </br> Fotografia digital tamaño infantil. </br> Boletas de ultimo grado de estudios </br> Llenar el formato.</p>
 							<form class="subscribe">
                             <div class="input-append">
-                                <a href="registrate.view.php" target="_black">
+                                <a href="registrate.php" target="_black">
                                 <button class="btn btn-theme" type="button">Registrarse</button>
                                 </a>
                             </div>
@@ -86,7 +86,7 @@
 							<p class="categoria">CURP </br> 15 años cumplidos. </br> Acta de nacimiento. </br> Boletas de primero y/o segundo grado. </br> Fotografia digital tamaño infantil. </br> Boletas de primero y/o segundo grado de secundaria </br> Llenar el formato.</p>
 				            <form class="subscribe">
                             <div class="input-append">
-                                <a href="registrate.view.php" target="_black">
+                                <a href="registrate.php" target="_black">
                                 <button class="btn btn-theme" type="button">Registrarse</button>
                                 </a>
                             </div>
