@@ -13,7 +13,7 @@
 			<nav class="menu">
 				<a href="#acerca-de">Acerca de</a>
                 <a href="#trabajos">Servicios </a>
-                <a href="index.php">Iniciar sesión</a>
+                <a href="login.php">Iniciar Sesion</a>
 				<a href="#contacto">Contactanos</a>
 			</nav>
 			
