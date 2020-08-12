@@ -14,6 +14,7 @@
 				<a href="#acerca-de">Acerca de</a>
                 <a href="#trabajos">Servicios </a>
                 <a href="login.php">Iniciar sesión</a>
+				<a href="formulariousuario.php">Registrate</a>
 			</nav>
 			
 			<div class="contenedor-texto">
@@ -53,13 +54,11 @@
 							<p class="categoria">CURP </br> 15 años cumplidos. </br> Fotografia digital tamaño infantil. </br> Llenar el formato.</p>
 							<form class="subscribe">
                             <div class="input-append">
-<<<<<<< HEAD
+
                                 
-=======
-                                <a href="registrate.php" target="_black">
-                                <button class="btn btn-theme" type="button">Registrarse</button>
-                                </a>
->>>>>>> eed3ea9cca0f145361be9ee52ffbf9ae50edb41d
+
+                                
+
                             </div>
                             </form>
 						</div>
@@ -73,13 +72,8 @@
 							<p class="categoria">CURP </br> 15 años cumplidos. </br> Fotografia digital tamaño infantil. </br> Boletas de ultimo grado de estudios </br> Llenar el formato.</p>
 							<form class="subscribe">
                             <div class="input-append">
-<<<<<<< HEAD
-                                
-=======
-                                <a href="registrate.php" target="_black">
-                                <button class="btn btn-theme" type="button">Registrarse</button>
-                                </a>
->>>>>>> eed3ea9cca0f145361be9ee52ffbf9ae50edb41d
+               
+                               
                             </div>
                             </form>
 						</div>
@@ -93,13 +87,10 @@
 							<p class="categoria">CURP </br> 15 años cumplidos. </br> Acta de nacimiento. </br> Boletas de primero y/o segundo grado. </br> Fotografia digital tamaño infantil. </br> Boletas de primero y/o segundo grado de secundaria </br> Llenar el formato.</p>
 				            <form class="subscribe">
                             <div class="input-append">
-<<<<<<< HEAD
+
                                 
-=======
-                                <a href="registrate.php" target="_black">
-                                <button class="btn btn-theme" type="button">Registrarse</button>
-                                </a>
->>>>>>> eed3ea9cca0f145361be9ee52ffbf9ae50edb41d
+
+                                
                             </div>
                             </form>
 						</div>
@@ -110,19 +101,9 @@
 	</section>
 
 	<footer>
-<<<<<<< HEAD
-        <section class="galeria" id="galeria">
-            <div class="foto">
-                <img src="img/1.jpg" alt="300" width="300">
-            </div>
-            <div class="foto">
-                <img src="img/3.jpg" alt="300" width="300">
-            </div>
-            <div class="foto">
-                <img src="img/4.jpg" alt="300" width="300">
-            </div>
-        </section>    
-=======
+
+           
+
 		<div class="contenedor-galeria">
 			<img src="img/1.jpg" alt="" class="galeria__img">
 			<img src="img/3.jpg" alt="" class="galeria__img">
@@ -131,7 +112,7 @@
 			<img src="img/6.jpg" alt="" class="galeria__img">
 			<img src="img/7.jpg" alt="" class="galeria__img">
 		</div>
->>>>>>> eed3ea9cca0f145361be9ee52ffbf9ae50edb41d
+
         <section class="ubicacion" id="ubicacion">
             <div class="contenedor">
                 <h3 class="titulo1">Ubicación</h3>
@@ -149,17 +130,13 @@
         </section>
         <section class="redes-sociales">
 			<div class="contenedor">
-<<<<<<< HEAD
-				
-=======
-				<p>Pre-registro </br> Registrate en los Servicios que te ofrece el ITEA.</p>
+		
+				<p>Registrate en los Servicios que te ofrece el ITEA.</p>
                 	<form class="subscribete">
                  		<div class="input-append">
-                        	<a href="registrate.php" target="_black">
-                      		<button class="btn btn-theme" type="button">Registrarse</button>
-                    		</a>
+                        	
             		   </div>
->>>>>>> eed3ea9cca0f145361be9ee52ffbf9ae50edb41d
+
 		            </form>
 			</div>
 		</section>

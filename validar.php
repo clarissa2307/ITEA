@@ -17,7 +17,7 @@ session_start();
 		if($pass==$f2['passu']){
 			//$_SESSION['id_usuario']=$f2['id_usuario'];
 			$_SESSION['correo']=$f2['correo'];
-			$_SESSION['rol']=$f2['1'];
+			$_SESSION['rol']=$f2['rol'];
 
 			echo '<script>alert("BIENVENIDO ADMINISTRADOR")</script> ';
 			echo "<script>location.href='admin.php'</script>";
@@ -31,7 +31,7 @@ session_start();
 		if($pass==$f['pass']){
 			//$_SESSION['id_usuario']=$f['id_usuario'];
 			$_SESSION['correo']=$f['correo'];
-			$_SESSION['rol']=$f['2'];
+			$_SESSION['rol']=$f['rol'];
 
 			header("Location: formularioedu.php");
 		}else{
