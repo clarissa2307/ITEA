@@ -30,21 +30,49 @@
 					<img src="img/ITEA.jpg" alt="IMG">
 				</div>
 
-				<form class="login100-form validate-form" action="validar.php">
+				<form class="login100-form validate-form" action="" method="POST">
 					<span class="login100-form-title">
-						Ingresa tu Usuario
+						Registrate
 					</span>
-
-					<div class="wrap-input100 validate-input" data-validate = "usuario incorrecto">
-						<input class="input100" type="text" name="usuario" placeholder="Usuario">
+                    <div class="wrap-input100 validate-input" data-validate = "llene correctamente">
+						<input class="input100" type="text" name="nombre" placeholder="Nombre">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</span>
+					</div>
+                    <div class="wrap-input100 validate-input" data-validate = "llene correctamente">
+						<input class="input100" type="text" name="apellidopaterno" placeholder="Apellido Paterno">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</span>
+					</div>
+                    <div class="wrap-input100 validate-input" data-validate = "llene correctamente">
+						<input class="input100" type="text" name="apellidomaterno" placeholder="Apellido Materno">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</span>
+					</div>
+                   
+					<div class="wrap-input100 validate-input" data-validate = "Correo invalido">
+						<input class="input100" type="text" name="correo" placeholder="Correo">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
 						</span>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate = "contraseña incorrecta">
-						<input class="input100" type="password" name="passt" placeholder="Contraseña">
+					<div class="wrap-input100 validate-input" data-validate = "llene correctamente">
+						<input class="input100" type="password" name="pass" placeholder="Contraseña">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+                    <div class="wrap-input100 validate-input" data-validate = "llene correctamente">
+						<input class="input100" type="password" name="rpass" placeholder="Contraseña">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
@@ -63,14 +91,14 @@
 						<a class="txt2" href="#">
                           
                             
-                            <a href="formulariousuario.php">Registrate</a>
+                            <a href="login.php">Iniciar Sesion</a>
 							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
 						</a>
 					</div>
 				</form>
                 <?php
 		if(isset($_POST['submit'])){
-			require("validar.php");
+			require("registro.php");
 		}
 	?>
 			</div>
