@@ -170,7 +170,7 @@ if (@!$_SESSION['nombre']) {
 <footer class="footer">
 
 <hr class="soften"/>
-<p>&copy; Copyright Joseph Godoy <br/><br/></p>
+<p>&copy; Copyright Martha Cristian Jesus <br/><br/></p>
  </footer>
 </div><!-- /container -->
 
