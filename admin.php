@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <?php
 session_start();
-if (@!$_SESSION['user']) {
-	header("Location:index.php");
+if (@!$_SESSION['nombre']) {
+	header("Location:login.php");
 }elseif ($_SESSION['rol']==2) {
-	header("Location:formulariousuario.php");
+	header("Location:formularioedu.php");
 }
 ?>
 <html lang="en">
@@ -49,7 +50,7 @@ if (@!$_SESSION['user']) {
 		</form>
 		<ul class="nav pull-right">
 		<li><a href="">Bienvenido <strong><?php echo $_SESSION['nombre'];?></strong> </a></li>
-			  <li><a href="desconectar.php"> Cerrar Sesión </a></li>			 
+			  <li><a href="desconectar.php"> Cerrar Cesión </a></li>			 
 		</ul>
 	  </div><!-- /.nav-collapse -->
 	</div>
@@ -66,7 +67,7 @@ if (@!$_SESSION['user']) {
 		<div class="caption">
 		
 <!--///////////////////////////////////////////////////Empieza cuerpo del documento interno////////////////////////////////////////////-->
-		<h2> Administración de usuarios Educandos</h2>	
+		<h2> Administración de Educandos registrados</h2>	
 		<div class="well well-small">
 		<hr class="soft"/>
 		<h4>Tabla de Educandos</h4>
@@ -78,20 +79,19 @@ if (@!$_SESSION['user']) {
 			<?php
 
 				require("connect_db.php");
-				$sql=("SELECT * FROM Educando");
+				$sql=("SELECT * FROM educando");
 	
 //la variable  $mysqli viene de connect_db que lo traigo con el require("connect_db.php");
 				$query=mysqli_query($mysqli,$sql);
 
 				echo "<table border='1'; class='table table-hover';>";
 					echo "<tr class='warning'>";
-					    echo "<td>ID</td>";
-						echo "<td>Nombre</td>";
+						echo "<td>Id</td>";
+						echo "<td>NOmbre</td>";
 						echo "<td>Apellido Paterno</td>";
-						echo "<td>Apellido Materno</td>";
-						echo "<td>Curp</td>";
-						echo "<td>Estudio</td>";
-						
+						echo "<td>Apellido Paterno</td>";
+                        echo "<td>Curp</td>";
+                        echo "<td>Estudio</td>";
 						echo "<td>Editar</td>";
 						echo "<td>Borrar</td>";
 					echo "</tr>";
@@ -106,10 +106,8 @@ if (@!$_SESSION['user']) {
 				    	echo "<td>$arreglo[1]</td>";
 				    	echo "<td>$arreglo[2]</td>";
 				    	echo "<td>$arreglo[3]</td>";
-						echo "<td>$arreglo[4]</td>";
-						echo "<td>$arreglo[9]</td>";
-						
-
+                        echo "<td>$arreglo[4]</td>";
+                        echo "<td>$arreglo[9]</td>";
 
 				    	echo "<td><a href='actualizar.php?id=$arreglo[0]'><img src='images/actualizar.gif' class='img-rounded'></td>";
 						echo "<td><a href='admin.php?id=$arreglo[0]&idborrar=2'><img src='images/eliminar.png' class='img-rounded'/></a></td>";
@@ -126,7 +124,7 @@ if (@!$_SESSION['user']) {
 		
 						$sqlborrar="DELETE FROM educando WHERE id=$id";
 						$resborrar=mysqli_query($mysqli,$sqlborrar);
-						echo '<script>alert("REGISTRO ELIMINADO")</script> ';
+						
 						//header('Location: proyectos.php');
 						echo "<script>location.href='admin.php'</script>";
 					}
@@ -172,7 +170,7 @@ if (@!$_SESSION['user']) {
 <footer class="footer">
 
 <hr class="soften"/>
-<p>&copy; Copyright Martha, Cristian, Jesus  <br/><br/></p>
+<p>&copy; Copyright Joseph Godoy <br/><br/></p>
  </footer>
 </div><!-- /container -->
 
