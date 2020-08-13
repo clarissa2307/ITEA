@@ -7,16 +7,16 @@
 session_start();
 	require("connect_db.php");
 
-	$username=$_POST['usuario'];
-	$pass=$_POST['passt'];
+	$user=$_POST['user'];
+	$passd=$_POST['passd'];
 
 
 	//la variable  $mysqli viene de connect_db que lo traigo con el require("connect_db.php");
-	$sql2=mysqli_query($mysqli,"SELECT * FROM usuario WHERE correo='$username'");
+	$sql2=mysqli_query($mysqli,"SELECT * FROM usuario WHERE correo='$user'");
 	if($f2=mysqli_fetch_assoc($sql2)){
-		if($pass==$f2['passu']){
-			//$_SESSION['id_usuario']=$f2['id_usuario'];
-			$_SESSION['correo']=$f2['correo'];
+		if($pasd==$f2['passa']){
+			$_SESSION['id_usuario']=$f2['id_usuario'];
+			$_SESSION['nombre']=$f2['nombre'];
 			$_SESSION['rol']=$f2['rol'];
 
 			echo '<script>alert("BIENVENIDO ADMINISTRADOR")</script> ';
@@ -26,24 +26,24 @@ session_start();
 	}
 
 
-	$sql=mysqli_query($mysqli,"SELECT * FROM usuario WHERE correo='$username'");
+	$sql=mysqli_query($mysqli,"SELECT * FROM usuario WHERE correo='$user'");
 	if($f=mysqli_fetch_assoc($sql)){
-		if($pass==$f['pass']){
-			//$_SESSION['id_usuario']=$f['id_usuario'];
-			$_SESSION['correo']=$f['correo'];
+		if($pasd==$f['passu']){
+			$_SESSION['id_usuario']=$f['id_usuario'];
+			$_SESSION['nombre']=$f['nombre'];
 			$_SESSION['rol']=$f['rol'];
 
 			header("Location: formularioedu.php");
 		}else{
 			echo '<script>alert("CONTRASEÑA INCORRECTA")</script> ';
 		
-			echo "<script>location.href='index.php'</script>";
+			echo "<script>location.href='login.php'</script>";
 		}
 	}else{
 		
-		echo '<script>alert("ESTE USUARIO NO EXISTE, PORFAVOR REGISTRESE PARA PODER INGRESAR")</script> ';
+		echo '<script>alert("ESTE USUARIO NO EXISTE, POR FAVOR REGISTRE PARA PODER INGRESAR")</script> ';
 		
-		echo "<script>location.href='index.php'</script>";	
+		echo "<script>location.href='formulariousuario.php'</script>";	
 
 	}
 
