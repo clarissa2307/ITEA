@@ -1,16 +1,13 @@
-<!DOCTYPE html>
 <?php
 session_start();
-if (@!$_SESSION['nombre']) {
+if (@!$_SESSION['user']) {
 	header("Location:login.php");
-}elseif ($_SESSION['rol']==2) {
-	header("Location:formularioedu.php");
 }
-?>
+?>		
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Proyecto Academias</title>
+    <title>ITEA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Joseph Godoy">
@@ -35,6 +32,7 @@ if (@!$_SESSION['nombre']) {
 
   <!-- Navbar
     ================================================== -->
+
 
 <div class="navbar">
   <div class="navbar-inner">
@@ -67,73 +65,47 @@ if (@!$_SESSION['nombre']) {
 		<div class="caption">
 		
 <!--///////////////////////////////////////////////////Empieza cuerpo del documento interno////////////////////////////////////////////-->
-		<h2> Administración de Educandos registrados</h2>	
+		<h2> Administración de Educando</h2>	
 		<div class="well well-small">
 		<hr class="soft"/>
-		<h4>Tabla de Educandos</h4>
+		<h4>Edición de Educando</h4>
 		<div class="row-fluid">
 		
+		<?php
+		extract($_GET);
+		require("connect_db.php");
 
-
-
-			<?php
-
-				require("connect_db.php");
-				$sql=("SELECT * FROM educando");
+		$sql="SELECT * FROM educando WHERE id=$id";
+	//la variable  $mysqli viene de connect_db que lo traigo con el require("connect_db.php");
+		$ressql=mysqli_query($mysqli,$sql);
+		while ($row=mysqli_fetch_row ($ressql)){
+		    	$id=$row[0];
+		    	$nombre=$row[1];
+		    	$apellidop=$row[2];
+		    	$apellidom=$row[3];
+                $curp=$row[4];
+                $estudio=$row[9];
+                
 	
-//la variable  $mysqli viene de connect_db que lo traigo con el require("connect_db.php");
-				$query=mysqli_query($mysqli,$sql);
+		    }
 
-				echo "<table border='1'; class='table table-hover';>";
-					echo "<tr class='warning'>";
-						echo "<td>Id</td>";
-						echo "<td>NOmbre</td>";
-						echo "<td>Apellido Paterno</td>";
-						echo "<td>Apellido Paterno</td>";
-                        echo "<td>Curp</td>";
-                        echo "<td>Estudio</td>";
-						echo "<td>Editar</td>";
-						echo "<td>Borrar</td>";
-					echo "</tr>";
 
-			    
-			?>
-			  
-			<?php 
-				 while($arreglo=mysqli_fetch_array($query)){
-				  	echo "<tr class='success'>";
-				    	echo "<td>$arreglo[0]</td>";
-				    	echo "<td>$arreglo[1]</td>";
-				    	echo "<td>$arreglo[2]</td>";
-				    	echo "<td>$arreglo[3]</td>";
-                        echo "<td>$arreglo[4]</td>";
-                        echo "<td>$arreglo[9]</td>";
 
-				    	echo "<td><a href='actualizar.php?id=$arreglo[0]'><img src='images/actualizar.gif' class='img-rounded'></td>";
-						echo "<td><a href='admin.php?id=$arreglo[0]&idborrar=2'><img src='images/eliminar.png' class='img-rounded'/></a></td>";
-						
+		?>
 
-						
-					echo "</tr>";
-				}
+		<form action="ejecutaactualizar.php" method="post">
+				Id<br><input type="text" name="id" value= "<?php echo $id ?>" readonly="readonly"><br>
+				Nombre<br> <input type="text" name="apellidop" value="<?php echo $apellidop?>"><br>
+				Apellido Paterno<br> <input type="text" name="apellidom" value="<?php echo $apellidom?>"><br>
+				Apellido Materno<br> <input type="text" name="apellidom" value="<?php echo $apellidom?>"><br>
+				Curp<br> <input type="text" name="curp" value="<?php echo $curp?>"><br>
+                Estudio<br> <input type="text" name="estudio" value="<?php echo $estudio?>"><br>
+				
+				<br>
+				<input type="submit" value="Guardar" class="btn btn-success btn-primary">
+			</form>
 
-				echo "</table>";
-
-					extract($_GET);
-					if(@$idborrar==2){
-		
-						$sqlborrar="DELETE FROM educando WHERE id=$id";
-						$resborrar=mysqli_query($mysqli,$sqlborrar);
-						
-						//header('Location: proyectos.php');
-						echo "<script>location.href='admin.php'</script>";
-					}
-
-			?>
-			
 				  
-			  			  
-			  
 		
 		
 		<div class="span8">
@@ -170,7 +142,7 @@ if (@!$_SESSION['nombre']) {
 <footer class="footer">
 
 <hr class="soften"/>
-<p>&copy; Copyright Martha Cristian Jesus <br/><br/></p>
+<p>&copy; Copyright Martha, Cristian, Jesus <br/><br/></p>
  </footer>
 </div><!-- /container -->
 

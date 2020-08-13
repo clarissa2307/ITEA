@@ -12,7 +12,7 @@
 		
 		</form>
 		<ul class="nav pull-right">
-				<li><a href="">Bienvenido  </a></li>
+				<li><a href="">Bienvenido <strong> <?php echo $_SESSION['nombre'];?></strong></a></li>
 			  <li><a href="desconectar.php"> Cerrar Sesión </a></li>			 
 		</ul>
 	  </div><!-- /.nav-collapse -->

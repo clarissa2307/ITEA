@@ -30,13 +30,13 @@
 					<img src="img/ITEA.jpg" alt="IMG">
 				</div>
 
-				<form class="login100-form validate-form" action="validar.php">
+				<form class="login100-form validate-form" action="validar.php" method="POST">
 					<span class="login100-form-title">
 						Ingresa tu Usuario
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "usuario incorrecto">
-						<input class="input100" type="text" name="usuario" placeholder="Usuario">
+					<input type="text" name="user" class="input100"  required placeholder="Usuario"/>
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
@@ -44,7 +44,7 @@
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "contraseña incorrecta">
-						<input class="input100" type="password" name="passt" placeholder="Contraseña">
+					<input type="password" name="passd" class="input100"  placeholder="Contraseña" />
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
@@ -68,11 +68,7 @@
 						</a>
 					</div>
 				</form>
-                <?php
-		if(isset($_POST['submit'])){
-			require("validar.php");
-		}
-	?>
+        
 			</div>
 		</div>
 	</div>
