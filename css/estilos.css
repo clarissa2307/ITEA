@@ -61,10 +61,10 @@ header .contenedor-texto {
     }
     .main .acerca-de .foto {
         display: flex;
-        width: 100%;
+        width: 10000px;
         justify-content: space-around;
         flex-wrap: wrap;
-        max-width: 800px;
+        max-width: 1000px;
         margin: auto;
         margin-bottom: -30px;
     }
