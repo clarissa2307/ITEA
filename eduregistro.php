@@ -1,5 +1,5 @@
 <?php
-
+     
 	$nombre=$_POST['nombre'];
 	$apellidop=$_POST['apellidop'];
 	$apellidom=$_POST['apellidom'];
@@ -19,17 +19,16 @@
 
 	require("connect_db.php");
 //la variable  $mysqli viene de connect_db que lo traigo con el require("connect_db.php");
-	
-				
+
 				//require("connect_db.php");
 //la variable  $mysqli viene de connect_db que lo traigo con el require("connect_db.php");
-				mysqli_query($mysqli,"INSERT INTO educando VALUES('','$nombre','$apellidop','$apellidom', '$curp', '$edad', '$genero', '$fecha', '$correo', '$estudio', '2')");
+				mysqli_query($mysqli,"INSERT INTO educando VALUES('','$nombre','$apellidop','$apellidom', '$curp', '$edad', '$genero', '$fecha', '$correo', '$estudio', '1')");
 				//echo 'Se ha registrado con exito';
 				
                 
-                mysqli_query($mysqli,"INSERT INTO domicilio VALUES('','$calle','$ext','$inte', '$municipio', '$localidad', '$colonia', '$telefono', '2')");
-				//echo 'Se ha registrado con exito';
-				echo ' <script language="javascript">alert("Se registrado con éxito");</script> ';
+                mysqli_query($mysqli,"INSERT INTO domicilio VALUES('','$calle','$ext','$inte', '$municipio', '$localidad', '$colonia', '$telefono', '26')");
+				////echo 'Se ha registrado con exito';
+				//echo ' <script language="javascript">alert("Se registrado con éxito");</script> ';
 		
 	
 ?>

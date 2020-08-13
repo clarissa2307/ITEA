@@ -5,7 +5,7 @@
 	<title>ITEA</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/estilos2.css">
 </head>
 <body>
 	<header>

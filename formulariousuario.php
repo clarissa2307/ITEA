@@ -96,11 +96,7 @@
 						</a>
 					</div>
 				</form>
-                <?php
-		if(isset($_POST['submit'])){
-			require("registro.php");
-		}
-	?>
+                
 			</div>
 		</div>
 	</div>

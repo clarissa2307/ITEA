@@ -1,258 +1,51 @@
-* {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; }
-  
-body {
-    background: #fff;
-    font-family: "Open Sans";
-    font-size: 16px; }
-  
-.contenedor {
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden; }
-/* ----- ----- HEADER ----- ----- */
-
-header .menu {
-    margin: 40px 0;
-    text-align: right; }
-    header .menu a {
-        margin: 0 20px;
-        color: #000;
-        padding-bottom: 9px;
-        font-size: 1em;
-        display: inline-block;
-        text-decoration: none;
-        border-bottom: 2px solid transparent; }
-        header .menu a:hover {
-            border-bottom: 2px solid #000; }
-header .contenedor-texto {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin: 50px 0; }
-    header .contenedor-texto .texto {
-        border: 2px solid rgba(255, 255, 255, 0.5);
-        border-radius: 3px;
-        display: inline-block;
-        text-align: center;
-        padding: 20px 60px; }
-        header .contenedor-texto .texto h1, header .contenedor-texto .texto h2 {
-            color: #000;
-            font-weight: 300;
-            margin: 0; }
-        header .contenedor-texto .texto .nombre {
-            margin-bottom: 10px;
-            font-size: 50px;
-            line-height: 50px; }
-        header .contenedor-texto .texto .profesion {
-            font-size: 25px;
-            line-height: 25px; }
-  
-/* ----- ----- MAIN ----- ----- */
-.main .contenedor {
-    overflow: visible; }
-    .main .acerca-de {
-        text-align: center; 
-    }
-    .main .acerca-de .foto {
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        max-width: 800px;
-        margin: auto;
-        margin-bottom: -30px;
-    }
-        .main .acerca-de .foto img {
-            vertical-align: center;
-        }  
-    .main .acerca-de .texto {
-        color: #323068;
-        font-weight: 600;
-        font-size: 1em;
-        line-height: 30px;
-        width: 80%;
-        margin: 40px auto 60px auto; }
-        .main .acerca-de .texto .titulo {
-            font-size: 34px;
-            margin-bottom: 40px;
-            line-height: 34px;
-            font-weight: 300;
-            color: #dd820d;
-            text-align: center; }
-.main .trabajos {
-    background: #e5e4e2;
-    padding: 50px 0; 
-    margin-bottom: 80px;}
-    .main .trabajos .contenedor {
-        overflow: hidden;}
-        .main .trabajos .titulo {
-        font-size: 34px;
-        line-height: 34px;
-        margin-bottom: 60px;
-        font-weight: 300;
-        color: #323068;
-        text-align: center; }
-        .main .trabajos .contenedor-trabajos {
-            display: flex;
-            flex-direction: rows;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin-bottom: -20px; }
-        .main .trabajos .contenedor-trabajos .trabajo {
-            width: 23%;
-            margin-bottom: 40px; }
-        .main .trabajos .contenedor-trabajos .trabajo .thumb {
-            width: 100%;
-            margin-bottom: 10px; }
-        .main .trabajos .contenedor-trabajos .trabajo .thumb img {
-            vertical-align: top;
-            width: 100%;
-            border-radius: 3px; }
-        .main .trabajos .contenedor-trabajos .trabajo .descripcion {
-            text-align: center; }
-        .main .trabajos .contenedor-trabajos .trabajo .descripcion .nombre {
-            font-weight: 700;
-            color: #3895ea;
-            margin-bottom: 10px; }
-        .main .trabajos .contenedor-trabajos .trabajo .descripcion .categoria {
-            font-size: 14px;
-            color: #323068; 
-            margin-bottom: 0px;}
-  
-  /* ----- ----- FOOTER ----- ----- */
-.contenedor-galeria {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 1000px;
-    margin: auto;
-    margin-bottom: -30px;
+body{
+	background: #ccc;
+	font-size: 1em;
+	font-family: arial;
 }
-.galeria__img {
-    width: 300px;
-    height: 200px;
-    margin-bottom: 30px;
-    object-fit: cover;
-    animation: escalar 1.5s infinite alternate;
-    filter: brightness(60%);
-}
-@keyframes escalar {
-    to {
-        transform: scale(1);
-    }
-    from {
-        transform: scale(1.05);
-    }
-}
+header{
+	margin: 0;
+	background: #2E2EFE;	
+	color:#FE2E2E;
+	text-align: center; ;
+	position: 1em 0;
+	border-bottom: 5px solid #000;
 
-.galeria__img:hover {
-    filter: brightness(100%);
 }
-
-footer .ubicacion {
-    background: #fff;
-    padding: 60px 0;
-    overflow: hidden;
+nav{
+	text-align: center;
+	margin-top: 0.7em;
 }
-        
-    footer .ubicacion .titulo {
-        text-align: left;
-        font-size: 0px;
-        line-height: 0px;
-        font-weight: 0;
-        margin-bottom: 0px;
-    }
-        
-    footer .ubicacion .direccion {
-        float: left;
-        width: 20%;
-        text-align: left;
-    }
-        
-    footer .ubicacion .horarios {
-        float: right;
-        width: 50%;
-        text-align: right;
-        overflow: hidden;
-    }
-        
-    footer .ubicacion .direccion .calle {
-        margin-bottom: 15px;
-    }
-        
-    footer .ubicacion .horarios h4 {
-        text-align: right;
-        margin-bottom: 0px;
-    }
-        
-    footer .ubicacion .horarios .entre-semana{
-        width: 50%;
-        float: right;
-        text-align: right;
-    }
-        
-        
-    footer .mapa {
-        width: 100%;
-        overflow: hidden;
-        margin-bottom: -65px;
-    }
-        
-        footer .mapa iframe {
-            width: 100%;
-            max-height: 600px;
-        }
-
-/*-------footer-------*/
-footer .redes-sociales {
-    background: #1e2b38;
-    padding: 30px 0; 
-    color: fff; 
-    text-align: center;}
-    footer .redes-sociales .contenedor {
-      justify-content: center;
-      color: #fff; }
-      footer .redes-sociales .contenedor a {
-        color: #fff;
-        text-align: center;
-        width: 80px;
-        font-size: 10px;
-        padding: 10px 0;
-        display: block;
-        margin: 0 0px;}
-        footer .redes-sociales .contenedor .input-append {
-            text-align: center;
-        }
-/* ----- ----- MEDIA QUERIES ----- ----- */
-@media screen and (max-width: 800px) {
-    header .menu {
-        text-align: center; }
-  
-.main .trabajos .contenedor-trabajos .trabajo {
-    width: 46%; } }
-@media screen and (max-width: 500px) {
-header .contenedor-texto .texto .nombre {
-    font-size: 35px; }
-header .contenedor-texto .texto .profesion {
-    font-size: 18px; }
-footer .redes-sociales .contenedor {
-    flex-wrap: wrap; }
-footer .redes-sociales .contenedor a {
-    padding: 20px; }  
-
-footer .ubicacion .direccion {
-    margin-bottom: 15px;
+nav li{
+	display: inline-block;
+	list-style: none;
 }
-
-footer .ubicacion .direccion,
-footer .ubicacion .horarios {
-    width: 100%;
-    text-align: center;}
+nav li a{
+	text-decoration: none;
+	background: #0489B1;
+	color: #fff;
+	border-radius: 3px;
+	padding: 0.6em 0.3em;
+	box-shadow: 5px 5px 5px #333;
+}
+nav li a:hover {
+	text-decoration: none;
+	background: #AAE9F8;
+	color: #fff;
+	border-radius: 3px;
+	padding: 0.6em 0.3em;
+}
+footer{
+	border-top: 3px solid #000;
+	background: #848484;
+	color:#FF0000;
+	text-align: center;
+	font-size: 0.7em;
+	padding: 1em 0;
+}
+section#contenido{
+	background: #fff;
+	padding: 1em ;
+	margin: 2em auto;
+	width: 80%;
 }

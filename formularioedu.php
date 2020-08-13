@@ -1,5 +1,12 @@
 <!DOCTYPE html>
-
+<?php
+	session_start();
+	if (@!$_SESSION['nombre']) {
+		header("Location:login.php");
+	}elseif ($_SESSION['rol']==1) {
+		header("Location:admin.php");
+	}
+	?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,7 +29,7 @@
 include("include/menu.php");
 
 ?>
-  <form action="" method="POST">
+  <form method="POST">
     <br>
    <div class="container">
       <div class="">
@@ -30,30 +37,30 @@ include("include/menu.php");
       </div> 
       <div class="form-row">
         <div class="col-md-4 mb-3">
-          <label for="nombre">Nombre</label>
-          <input type="text" placeholder="Nombre" class="form-control is-valid" id="nombre" value="" required>
+          <label>Nombre</label>
+          <input type="text" placeholder="Nombre" class="form-control is-valid" name="nombre" value="" required>
         </div>
         <div class="col-md-4 mb-3">
           <label for="">Apellido Paterno</label>
-          <input type="text" placeholder="Apellido Paterno" class="form-control is-valid" id="apellidop" value="" required>
+          <input type="text" placeholder="Apellido Paterno" class="form-control is-valid" name="apellidop"  value="" required>
         </div>
         <div class="col-md-4 mb-3">
-          <label for="apellidom">Apellido Materno</label>
-          <input type="text" placeholder="Apellido Materno" class="form-control is-valid" id="apellidom" value="" required>
+          <label >Apellido Materno</label>
+          <input type="text" placeholder="Apellido Materno" class="form-control is-valid"  name="apellidom"  value="" required>
         </div>
       </div>
       <div class="form-row">
         <div class="col-md-6 mb-3">
-          <label for="curp">Curp</label>
-          <input type="text" placeholder="Curp" class="form-control is-valid" id="curp" value="" required>
+          <label >Curp</label>
+          <input type="text" placeholder="Curp" class="form-control is-valid" name="curp"  value="" required>
         </div>
         <div class="col-md-3 mb-3">
-          <label for="edad">Edad</label>
-          <input type="number" placeholder="Edad" class="form-control " id="edad" value="" required>
+          <label >Edad</label>
+          <input type="number" placeholder="Edad" class="form-control "  name="edad"  value="" required>
         </div>
         <div class="col-md-3 mb-3">
-          <label for="genero">Genero</label>
-          <select class="custom-select" id="genero" value="" required>
+          <label >Genero</label>
+          <select class="custom-select"  name="genero"  value="" required>
             <option>Mujer</option>
             <option>Hombre</option>
           </select>
@@ -61,12 +68,12 @@ include("include/menu.php");
       </div>
       <div class="form-row">
         <div class="col-md-3 mb-3">
-          <label for="fecha">Fecha Nacimiento</label>
-          <input type="date" placeholder="Edad" class="form-control " id="fecha" value="" required>
+          <label >Fecha Nacimiento</label>
+          <input type="date" placeholder="Edad" class="form-control " name="fecha"  value="" required>
         </div>
         <div class="col-md-4 mb-3">
-          <label for="correo">Correo electronico</label>
-          <input type="email" placeholder="Correo electronico" class="form-control is-valid" id="correo" value="" required>
+          <label>Correo electronico</label>
+          <input type="email" placeholder="Correo electronico" class="form-control is-valid" name="correo"  value="" required>
         </div>
       </div>  
       
@@ -75,36 +82,36 @@ include("include/menu.php");
       </div>
       <div class="form-row">
         <div class="col-md-6 mb-3">
-          <label for="calle">Domicilio</label>
-          <input type="text" placeholder="Nombre Domicilio" class="form-control is-valid" id="calle" value="" required>
+          <label >Domicilio</label>
+          <input type="text" placeholder="Nombre Domicilio" class="form-control is-valid" name="calle"  value="" required>
         </div>
         <div class="col-md-3 mb-3">
-          <label for="ext">No. Ext.</label>
-          <input type="text" placeholder="No. Ext." class="form-control is-valid" id="ext" value="" required>
+          <label >No. Ext.</label>
+          <input type="text" placeholder="No. Ext." class="form-control is-valid"  name="ext" value="" required>
         </div>
         <div class="col-md-3 mb-3">
-          <label for="inte">No. Int.</label>
-          <input type="text" placeholder="No. Int" class="form-control is-valid" id="inte" value="" required>
+          <label >No. Int.</label>
+          <input type="text" placeholder="No. Int" class="form-control is-valid" name="inte"  value="" required>
         </div>
       </div>
       <div class="form-row">
         <div class="col-md-4 mb-3">
-          <label for="municipio">Municipio</label>
-          <input type="text" placeholder="Municipio" class="form-control is-valid" id="municipio" value="" required>
+          <label >Municipio</label>
+          <input type="text" placeholder="Municipio" class="form-control is-valid" name="municipio" value="" required>
         </div>
         <div class="col-md-4 mb-3">
-          <label for="localidad">Localidad</label>
-          <input type="text" placeholder="Localidad" class="form-control is-valid" id="localidad" value="" required>
+          <label >Localidad</label>
+          <input type="text" placeholder="Localidad" class="form-control is-valid" name="localidad"  value="" required>
         </div>
         <div class="col-md-4 mb-3">
-          <label for="colonia">Colonia</label>
-          <input type="text" placeholder="Colonia" class="form-control is-valid" id="colonia" value="" required>
+          <label >Colonia</label>
+          <input type="text" placeholder="Colonia" class="form-control is-valid" name="colonia"  value="" required>
         </div>
       </div>
       <div class="form-row">
         <div class="col-md-4 mb-3">
-          <label for="telelefono">Telefono Celular</label>
-          <input type="tel" placeholder="Telefono Celular" class="form-control is-valid" id="telefono" value="" required>
+          <label >Telefono Celular</label>
+          <input type="tel" placeholder="Telefono Celular" class="form-control is-valid" name="telefono"  value="" required>
         </div>
         
         </div>
@@ -113,8 +120,8 @@ include("include/menu.php");
         </div>
       <div class="form-row">
         <div class="col-md-3 mb-3">
-          <label for="estudio">Nivel que solicita</label>
-          <select class="custom-select" id="estudio" value="" required>
+          <label >Nivel que solicita</label>
+          <select class="custom-select"  name="estudio" value="" required>
             <option>Alfabetizacion</option>
             <option>Primaria</option>
             <option>Secundaria</option>

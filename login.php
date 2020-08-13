@@ -68,11 +68,7 @@
 						</a>
 					</div>
 				</form>
-                <?php
-		if(isset($_POST['submit'])){
-			require("validar.php");
-		}
-	?>
+        
 			</div>
 		</div>
 	</div>
