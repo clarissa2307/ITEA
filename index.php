@@ -51,7 +51,7 @@
 						</div>
 						<div class="descripcion">
 							<p class="nombre">Alfabetización</p>
-							<p class="categoria">CURP </br> 15 años cumplidos. </br> Fotografia digital tamaño infantil. </br> Llenar el formato.</p>
+							<p class="categoria">Requisitos: </br></br>CURP </br> 15 años cumplidos. </br> Fotografia digital tamaño infantil. </br> Llenar el formato.</p>
 							<form class="subscribe">
                             <div class="input-append">
 
@@ -69,7 +69,7 @@
 						</div>
 						<div class="descripcion">
 							<p class="nombre">Primaria</p>
-							<p class="categoria">CURP </br> 15 años cumplidos. </br> Fotografia digital tamaño infantil. </br> Boletas de ultimo grado de estudios </br> Llenar el formato.</p>
+							<p class="categoria">Requisitos: </br></br>CURP </br> 15 años cumplidos. </br> Fotografia digital tamaño infantil. </br> Boletas de ultimo grado de estudios </br> Llenar el formato.</p>
 							<form class="subscribe">
                             <div class="input-append">
                
@@ -84,7 +84,7 @@
 						</div>
 						<div class="descripcion">
 							<p class="nombre">Secundaria</p>
-							<p class="categoria">CURP </br> 15 años cumplidos. </br> Acta de nacimiento. </br> Boletas de primero y/o segundo grado. </br> Fotografia digital tamaño infantil. </br> Boletas de primero y/o segundo grado de secundaria </br> Llenar el formato.</p>
+							<p class="categoria">Requisitos: </br></br>CURP </br> 15 años cumplidos. </br> Acta de nacimiento. </br> Boletas de primero y/o segundo grado. </br> Fotografia digital tamaño infantil. </br> Boletas de primero y/o segundo grado de secundaria </br> Llenar el formato.</p>
 				            <form class="subscribe">
                             <div class="input-append">
 
