@@ -1,10 +1,10 @@
 <?php
 
 
+
 extract($_POST);	//extraer todos los valores del metodo post del formulario de actualizar
 	require("connect_db.php");
-	$sentencia="update educando set nombre='$nombre', apellidop='$apellidop', apellidom='$apellidom', curp='$curp', estudio='$estudio' where id='$id'";
-	//la variable  $mysqli viene de connect_db que lo traigo con el require("connect_db.php");
+	$sentencia="update educando set nombre='$nombre', apellidop='$apellidop', apellidom='$apellidom', curp='$curp', estudio='$estudio', calle='$calle', ext='$ext', inte='$inte', municipio='$municipio', localidad='$localidad', colonia='$colonia', telefono='$telefono'  WHERE id_educando = '$id_educando'";
 	$resent=mysqli_query($mysqli,$sentencia);
 	if ($resent==null) {
 		echo "Error de procesamieno no se han actuaizado los datos";

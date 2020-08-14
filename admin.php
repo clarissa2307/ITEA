@@ -14,9 +14,9 @@ if (@!$_SESSION['nombre']) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Joseph Godoy">
-
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
@@ -27,35 +27,20 @@ if (@!$_SESSION['nombre']) {
 <div class="container">
 <header class="header">
 <div class="row">
-	<?php
-	include("include/cabecera.php");
-	?>
+	
 </div>
 </header>
 
   <!-- Navbar
     ================================================== -->
 
-<div class="navbar">
-  <div class="navbar-inner">
-	<div class="container">
-	  <div class="nav-collapse">
-		<ul class="nav">
-			<li class=""><a href="admin.php">ADMINISTRADOR DEL SITIO</a></li>
-			 
-	
-		</ul>
-		<form action="#" class="navbar-search form-inline" style="margin-top:6px">
-		
-		</form>
-		<ul class="nav pull-right">
-		<li><a href="">Bienvenido <strong><?php echo $_SESSION['nombre'];?></strong> </a></li>
-			  <li><a href="desconectar.php"> Cerrar Cesión </a></li>			 
-		</ul>
-	  </div><!-- /.nav-collapse -->
-	</div>
-  </div><!-- /navbar-inner -->
-</div>
+<nav class="navbar navbar-dark bg-dark">
+<a class="navbar-brand" >Administrador</a>
+<a class="navbar-brand">Bienvenido <strong><?php echo $_SESSION['nombre'];?></strong></a>
+<a class="navbar-brand" href="regiadmin.php">Registro</a>
+<a class="navbar-brand" href="desconectar.php">Cerrar sesion</a>
+
+</nav>
 
 <!-- ======================================================================================================================== -->
 <div class="row">
@@ -87,7 +72,7 @@ if (@!$_SESSION['nombre']) {
 				echo "<table border='1'; class='table table-hover';>";
 					echo "<tr class='warning'>";
 						echo "<td>Id</td>";
-						echo "<td>NOmbre</td>";
+						echo "<td>Nombre</td>";
 						echo "<td>Apellido Paterno</td>";
 						echo "<td>Apellido Paterno</td>";
                         echo "<td>Curp</td>";
@@ -109,8 +94,8 @@ if (@!$_SESSION['nombre']) {
                         echo "<td>$arreglo[4]</td>";
                         echo "<td>$arreglo[9]</td>";
 
-				    	echo "<td><a href='actualizar.php?id=$arreglo[0]'><img src='images/actualizar.gif' class='img-rounded'></td>";
-						echo "<td><a href='admin.php?id=$arreglo[0]&idborrar=2'><img src='images/eliminar.png' class='img-rounded'/></a></td>";
+				    	echo "<td><a href='actualizar.php?id_educando=$arreglo[0]'><img src='images/actualizar.gif' class='img-rounded'></td>";
+						echo "<td><a href='admin.php?id_educando=$arreglo[0]&idborrar=2'><img src='images/eliminar.png' class='img-rounded'/></a></td>";
 						
 
 						
@@ -122,9 +107,9 @@ if (@!$_SESSION['nombre']) {
 					extract($_GET);
 					if(@$idborrar==2){
 		
-						$sqlborrar="DELETE FROM educando WHERE id=$id";
+						$sqlborrar="DELETE FROM educando WHERE id_educando=$id_educando";
 						$resborrar=mysqli_query($mysqli,$sqlborrar);
-						
+						echo '<script>alert("REGISTRO ELIMINADO")</script> ';
 						//header('Location: proyectos.php');
 						echo "<script>location.href='admin.php'</script>";
 					}
@@ -170,7 +155,7 @@ if (@!$_SESSION['nombre']) {
 <footer class="footer">
 
 <hr class="soften"/>
-<p>&copy; Copyright Martha Cristian Jesus <br/><br/></p>
+<p>&copy; Martha, Cristian y Jesus <br/><br/></p>
  </footer>
 </div><!-- /container -->
 
@@ -179,6 +164,9 @@ if (@!$_SESSION['nombre']) {
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="bootstrap/js/jquery-1.8.3.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
 	</style>
   </body>
 </html>
