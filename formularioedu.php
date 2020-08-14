@@ -27,7 +27,7 @@
 <a class="navbar-brand" href="desconectar.php">Cerrar sesion</a>
 
 </nav>
-<form action="ejecutaactualizar.php" method="POST">
+<form action="" method="POST">
     <br>
    <div class="container">
       <div class="">
