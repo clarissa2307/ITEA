@@ -16,13 +16,11 @@
     
 </head>
 <body>
-<
+
 </div>
 </header>
 
-  <!-- Navbar
-    ================================================== -->
-<
+ 
 <nav class="navbar navbar-dark bg-dark">
 <a class="navbar-brand" >Registro de Educandos</a>
 <a class="navbar-brand">Bienvenido <strong><?php echo $_SESSION['nombre'];?></strong></a>

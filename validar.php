@@ -35,13 +35,13 @@ session_start();
 
 			header("Location: formularioedu.php");
 		}else{
-			echo '<script>alert("CONTRASEÑA INCORRECTA")</script> ';
+			
 		
 			echo "<script>location.href='login.php'</script>";
 		}
 	}else{
 		
-		echo '<script>alert("ESTE USUARIO NO EXISTE, POR FAVOR REGISTRE PARA PODER INGRESAR")</script> ';
+		
 		
 		echo "<script>location.href='formulariousuario.php'</script>";	
 
