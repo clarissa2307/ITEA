@@ -13,7 +13,7 @@ if (@!$_SESSION['nombre']) {
     <title>Proyecto Academias</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="Joseph Godoy">
+    <meta name="author" content="">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
@@ -22,8 +22,10 @@ if (@!$_SESSION['nombre']) {
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
   </head>
-<body data-offset="40" background="images/fondotot.jpg" style="background-attachment: fixed">
+<body data-offset="40" background="images/6.jpg" style="background-attachment: fixed">
 <div class="container">
 <header class="header">
 <div class="row">
@@ -38,7 +40,11 @@ if (@!$_SESSION['nombre']) {
 <a class="navbar-brand" >Administrador</a>
 <a class="navbar-brand">Bienvenido <strong><?php echo $_SESSION['nombre'];?></strong></a>
 <a class="navbar-brand" href="regiadmin.php">Registro</a>
-<a class="navbar-brand" href="desconectar.php">Cerrar sesion</a>
+<a class="navbar-brand" href="desconectar.php"></i>Cerrar sesion</a>
+<form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2 " type="search" name="submit" placeholder="Buscar">
+      <button class="btn btn-outline-success my-2 my-sm-0"  type="submit">Buscar</button>
+</form>
 
 </nav>
 
@@ -52,11 +58,8 @@ if (@!$_SESSION['nombre']) {
 		<div class="caption">
 		
 <!--///////////////////////////////////////////////////Empieza cuerpo del documento interno////////////////////////////////////////////-->
-		<h2> Administración de Educandos registrados</h2>	
-		<div class="well well-small">
-		<hr class="soft"/>
-		<h4>Tabla de Educandos</h4>
-		<div class="row-fluid">
+		<h2 class="text-white"> Administración de Educandos registrados</h2>	
+		
 		
 
 
@@ -155,7 +158,7 @@ if (@!$_SESSION['nombre']) {
 <footer class="footer">
 
 <hr class="soften"/>
-<p>&copy; Martha, Cristian y Jesus <br/><br/></p>
+<p class="text-white">&copy; Martha, Cristian y Jesus <br/><br/></p>
  </footer>
 </div><!-- /container -->
 
